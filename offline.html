@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Connection problem</title>
+  <style>
+    body {
+      font-family: -apple-system, Segoe UI, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f4f5f7;
+      color: #333;
+      text-align: center;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: none;
+      background: #1a73e8;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover { background: #1558b0; }
+  </style>
+</head>
+<body>
+  <h2>Can't reach EPA Cockpit</h2>
+  <p>Check your internet connection, then try again.</p>
+  <button id="retry">Retry</button>
+  <script>
+    document.getElementById('retry').onclick = function () {
+      location.replace('https://epacarriers.agency/');
+    };
+  </script>
+</body>
+</html>

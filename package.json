@@ -1,0 +1,74 @@
+{
+  "name": "epa-cockpit-desktop",
+  "productName": "EPA Cockpit",
+  "version": "1.0.0",
+  "description": "Desktop app for EPA Cockpit (epacarriers.agency)",
+  "homepage": "https://epacarriers.agency",
+  "main": "main.js",
+  "author": "EPA Carriers",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --mac --win --linux",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win",
+    "dist:linux": "electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "agency.epacarriers.cockpit",
+    "productName": "EPA Cockpit",
+    "artifactName": "EPA-Cockpit-${version}-${os}-${arch}.${ext}",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "offline.html",
+      "build/**"
+    ],
+    "mac": {
+      "target": [
+        { "target": "dmg", "arch": ["x64"] },
+        { "target": "zip", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.icns",
+      "category": "public.app-category.business",
+      "identity": null,
+      "hardenedRuntime": false
+    },
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "zip", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "EPA-Cockpit-Setup-${version}.${ext}"
+    },
+    "linux": {
+      "target": [
+        { "target": "AppImage", "arch": ["x64"] },
+        { "target": "deb", "arch": ["x64"] }
+      ],
+      "icon": "build/icons",
+      "category": "Office",
+      "maintainer": "EPA Carriers <ops@epacarriers.agency>",
+      "synopsis": "Desktop app for EPA Cockpit",
+      "desktop": {
+        "Name": "EPA Cockpit",
+        "Comment": "Freight management for EPA Carriers",
+        "StartupWMClass": "epa-cockpit-desktop"
+      }
+    }
+  }
+}
