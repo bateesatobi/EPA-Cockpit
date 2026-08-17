@@ -3,6 +3,8 @@ const path = require('path');
 
 const APP_URL = 'https://epacarriers.agency';
 const ALLOWED_HOST = 'epacarriers.agency';
+const ICON_PNG = path.join(__dirname, 'build', 'icon.png');
+const ICON_ICO = path.join(__dirname, 'build', 'icon.ico');
 
 let mainWindow;
 
@@ -16,14 +18,12 @@ function isAllowedUrl(url) {
 }
 
 function createWindow() {
-  const iconFile = process.platform === 'win32' ? 'icon.ico' : 'icon.png';
-
   mainWindow = new BrowserWindow({
     width: 1280,
     height: 800,
     minWidth: 900,
     minHeight: 600,
-    icon: path.join(__dirname, 'build', iconFile),
+    icon: process.platform === 'win32' ? ICON_ICO : ICON_PNG,
     backgroundColor: '#ffffff',
     autoHideMenuBar: process.platform !== 'darwin',
     webPreferences: {
@@ -106,6 +106,9 @@ function buildMenu() {
 }
 
 app.whenReady().then(() => {
+  if (process.platform === 'darwin' && app.dock) {
+    app.dock.setIcon(ICON_PNG);
+  }
   buildMenu();
   createWindow();
 

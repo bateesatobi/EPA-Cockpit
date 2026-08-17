@@ -12,10 +12,10 @@ Click the file for your computer. No technical setup is required.
 
 | Your computer | Download this | Then do this |
 |---|---|---|
-| **Windows 10 or 11** | [EPA-Cockpit-Setup-1.0.0.exe](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-Setup-1.0.0.exe) | Double-click the file and follow **Next** until it finishes. Open **EPA Cockpit** from the desktop or the Start menu. |
-| **Mac** | [EPA-Cockpit-1.0.0-mac-x64.dmg](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.0-mac-x64.dmg) | Open the file, drag **EPA Cockpit** into **Applications**, then open it from there. |
-| **Linux (Ubuntu / Debian)** | [EPA-Cockpit-1.0.0-linux-amd64.deb](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.0-linux-amd64.deb) | Double-click the file (or run `sudo dpkg -i EPA-Cockpit-1.0.0-linux-amd64.deb`). |
-| **Linux (any distro)** | [EPA-Cockpit-1.0.0-linux-x86_64.AppImage](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.0-linux-x86_64.AppImage) | Right-click the file → **Properties** → allow running as a program, then double-click it. |
+| **Windows 10 or 11** | [EPA-Cockpit-Setup-1.0.1.exe](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-Setup-1.0.1.exe) | Double-click the file and follow **Next** until it finishes. Open **EPA Cockpit** from the desktop or the Start menu. |
+| **Mac** | [EPA-Cockpit-1.0.1-mac-x64.dmg](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.1-mac-x64.dmg) | Open the file, drag **EPA Cockpit** into **Applications**, then open it from there. |
+| **Linux (Ubuntu / Debian)** | [EPA-Cockpit-1.0.1-linux-amd64.deb](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.1-linux-amd64.deb) | Double-click the file (or run `sudo dpkg -i EPA-Cockpit-1.0.1-linux-amd64.deb`). |
+| **Linux (any distro)** | [EPA-Cockpit-1.0.1-linux-x86_64.AppImage](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.1-linux-x86_64.AppImage) | Right-click the file → **Properties** → allow running as a program, then double-click it. |
 
 All files are also on the **[Releases page](https://github.com/bateesatobi/EPA-Cockpit/releases/latest)**.
 
@@ -34,7 +34,7 @@ Windows may say the app is unrecognized (it is not yet signed by Microsoft).
 
 ### Extra Windows option (no installer)
 
-If you cannot run the setup file, download [EPA-Cockpit-1.0.0-win-x64.zip](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.0-win-x64.zip), unzip it, and double-click **EPA Cockpit.exe**.
+If you cannot run the setup file, download [EPA-Cockpit-1.0.1-win-x64.zip](https://github.com/bateesatobi/EPA-Cockpit/releases/latest/download/EPA-Cockpit-1.0.1-win-x64.zip), unzip it, and double-click **EPA Cockpit.exe**.
 
 ---
 

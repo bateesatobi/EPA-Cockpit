@@ -1,7 +1,7 @@
 {
   "name": "epa-cockpit-desktop",
   "productName": "EPA Cockpit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desktop app for EPA Cockpit (epacarriers.agency)",
   "homepage": "https://epacarriers.agency",
   "main": "main.js",
